@@ -1,0 +1,97 @@
+/* Search.css */
+
+/* Container for the search section */
+.search {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;  /* Reduced padding to cover more area */
+}
+
+/* Container to hold all elements */
+.container {
+    width: 90%;  /* Increased width to make the content cover more area */
+    display: flex;
+    justify-content: space-between;  /* Distribute content evenly */
+    flex-wrap: wrap;
+    gap: 20px;  /* Space between boxes */
+}
+
+/* Left section for services */
+.left {
+    width: 100%;
+}
+
+/* Section title styling */
+.left h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Flex container for the two columns */
+.search-col-2 {
+    display: flex;
+    justify-content: space-between;  /* Distribute the boxes evenly */
+    flex-wrap: wrap;   /* Keep the elements from overflowing horizontally */
+    gap: 20px;  /* Space between boxes */
+}
+
+/* Each individual service box */
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 48%;  /* Slightly increased the width to make better use of space */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to enlarge boxes */
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside each service box */
+.box img {
+    width: 150px;  /* Set fixed width for images */
+    height: 150px;  /* Set fixed height to maintain uniformity */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;  /* Space between image and text */
+}
+
+/* Service title */
+.box div h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+.box div p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;  /* Added some margin for spacing */
+}
+
+/* Price styling */
+.box div strong {
+    color: #d9534f;
+    font-size: 1.2rem;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;  /* Take full width on smaller screens */
+    }
+
+    .search-col-2 {
+        justify-content: center; /* Center items on smaller screens */
+    }
+}
